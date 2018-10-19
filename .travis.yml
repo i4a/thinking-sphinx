@@ -1,6 +1,7 @@
 language: ruby
 rvm:
 - jruby-9.2.0.0
+sudo: required
 addons:
   apt:
     packages:
