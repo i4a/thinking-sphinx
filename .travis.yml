@@ -8,6 +8,7 @@ addons:
     - cmake
     - bison
     - flex
+    - haveged
 before_install:
 - pip install --upgrade --user awscli
 - gem update --system
@@ -36,3 +37,4 @@ addons:
   postgresql: '9.4'
 services:
 - postgresql
+- haveged
