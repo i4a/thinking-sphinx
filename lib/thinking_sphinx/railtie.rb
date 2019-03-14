@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class ThinkingSphinx::Railtie < Rails::Railtie
-  config.to_prepare do
-    ThinkingSphinx::Configuration.reset
-  end
+  # config.to_prepare do
+  #   ThinkingSphinx::Configuration.reset
+  # end
 
   initializer 'thinking_sphinx.initialisation' do
     ActiveSupport.on_load(:active_record) do
